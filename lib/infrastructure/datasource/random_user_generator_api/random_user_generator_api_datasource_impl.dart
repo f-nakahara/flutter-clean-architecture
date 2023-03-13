@@ -15,7 +15,7 @@ class RandomUserGeneratorApiDatasourceImpl
     final res = await _dio.get(
       '/',
       queryParameters: {
-        'results': 10,
+        'results': results,
       },
     );
     if (res.statusCode == 200) {
